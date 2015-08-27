@@ -1,2 +1,2 @@
-# dsci_402_F2015
-Repository for DSCI 402 Class
+# DSCI 402 Fall 2015 Repository
+This repo contains the code for DSCI 402 Class at UMW.
