@@ -1,0 +1,36 @@
+- list and tuple can both have a mix of types, still not clear on the difference - apparently they are interchangeable but its a mental thing () vs []
+- dictionaries {
+	- can mix key and values
+	- {} makes an empty dictionary
+	- h[<key>] = <value> will either edit teh key value or add the key and value
+	- use dictionary[key] to get value and set it
+	- set of keys: dictionary.keys()
+	- set of values: dictionary.values()
+	- no order to the pairs
+	- d.has_key(key) to see if the key has a value to check there will be no error
+	- d.items() takes each pair and returns it as tuple
+	- dict(list) to make list into a tuple - will remove and only take first value
+}
+
+- functions {
+	- x for x in <list> if <condition>
+}
+
+- notepad {
+	- highlight a section then ctrl+q will toggle comments
+}
+
+- can change types between list and tuples with the function of the same names
+
+- random numbers {
+	- from import random
+	- random.random() gives # from (0,1)
+	- random.randint(x,y) gives # from [x,y]
+	- random.sample(<list>, #)
+}
+
+- assingment {
+	hist(elements):
+		#return a dict in form
+		{element: # of occurrences}
+}
