@@ -19,3 +19,12 @@ optional_args_test(1,2,3,4,5)
 #using list as arguments
 data = [1,3]
 print (add_2(*data))
+
+nums = range(-10, 11)
+print(my_filter(lambda x: x > 0, nums))
+
+print(sum_range(0,1))
+
+print(factorial(5))
+
+print(fib(1,1,10))
