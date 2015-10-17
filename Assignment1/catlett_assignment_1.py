@@ -18,14 +18,11 @@ def all_perms(ls):
 		return [ls]	
 	if len(ls) == 2:
 		return [ls, ls[::-1]]
-
 	all_p = []
 	for i in range(0,len(ls)):
 		rest = ls[i+1:] + ls[0:i]
 		all_p += map(lambda x: [ls[i]] + x, all_perms(rest))
 	return all_p
-	#rest = all_perms(ls[1:])
-	#return map(lambda x: [ls[0]] + x, rest) + powerset(ls[1:] + [ls[0]])
 
 def spiral(n, end_corner = 2):
 	current_position_x = 0
