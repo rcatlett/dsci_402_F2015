@@ -1,2 +1,2 @@
-*.pyc
-*.*secret_account_info.txt
+*.*.pyc
+*.*.secret_account_info.txt
