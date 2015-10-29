@@ -73,3 +73,29 @@ def dynamic_fib(first, second, n, cache={}):
 	if not(cache.has_key(n)):
 		cache[n] = dynamic_fib(first, second, n-1, cache) + dynamic_fib(first, second, n - 2, cache)
 	return cache[n]
+
+#carteasian product 2D
+def CP(A, B):
+	pairs = []
+	for i in A:
+		for j in B:
+			pairs.append((i, j))
+	return pairs
+
+#CP of any number of sets
+def cart_prod(*sets):
+	if (length(sets) == 0):
+		return []
+	elif (length(sets) == 1):
+		return map(lambda x: [x], sets[0])
+	rest = cart_prod(sets[1:])
+	add_front = lambda x: map(lambda y: [x] + y, rest)
+	return reduce(map(add_front, sets[0]))
+
+def all_combos(items, k):
+	if k == 1:
+		return map(lambda x: [x], items)
+	if len(items) == k:
+		return [items]
+	rest = all_combos(items[1:], k-1)
+	return map(lambda x: [items[0]] + x, rest) + all_combos(items[1:], k) 

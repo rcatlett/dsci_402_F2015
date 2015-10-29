@@ -28,3 +28,7 @@ print(sum_range(0,1))
 print(factorial(5))
 
 print(fib(1,1,10))
+
+#print(car_prod([1,2],[3,4],[5,6]))
+
+print(all_combos([1,2,3,4,5,6],3))
