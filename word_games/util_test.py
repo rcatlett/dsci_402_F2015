@@ -5,12 +5,12 @@ import time
 words = read_words("../data_files/words.txt")
 
 t0 = time.clock()
-print(anagram("live", words))
-t1 = time.clock() - t0
+print(anagram("listen", words))
+t1 = time.clock() 
 print(t1-t0)
 
 t0 = time.clock()
-s = list("live")
+s = list("listen")
 s.sort()
 anagrams = []
 for w in words:
