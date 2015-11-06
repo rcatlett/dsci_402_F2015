@@ -1,5 +1,4 @@
 from catlett_assignment_2 import *
-#from it_works import *
 import time
 
 def read_words(filename):
@@ -10,6 +9,8 @@ words_list = read_words("../data_files/words.txt")
 
 t0 = time.clock()
 print(word_breaks("dotheredo", words_list))
+w = word_breaks("something", words_list)
+print(w)
 t1 = time.clock() - t0
 print(t1)
 
