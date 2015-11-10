@@ -1,0 +1,17 @@
+Which n states are the happiest?
+1) find sdtate of sweet, if it exists
+
+Gen.Approach
+states = {<state>: (<score>, <wc>}
+
+for t in tweets:
+	state = get.state(tweet)
+	cs, cwc = states[state]	
+	states[state] = (cs + stentiment(t), (wc + wc(t))
+	
+
+# Normalize
+
+# order by value
+
+# print first n

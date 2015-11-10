@@ -15,21 +15,18 @@ def read_props(filename, sep = '='):
 	
 # Read tweets as JSON objects from a file of json tweets.	
 def read_tweets(filename):	
-	print("In read_tweets\n")
 	data = open(filename, 'rb').read().decode('utf-16').split("\n")
 	tweets = []
 	for line in data:
 		try:
 			tweets.append(json.loads(line.strip()))
 		except:
-			print(line)	
 			print("JSON-unopenable tweet encountered")
 	return tweets
 
 # For a file of tweets, extract out the text portion of each.
 def read_texts(filename):
 	tweets = read_tweets(filename)
-	print("got tweets\n")
 	text = []
 	for tweet in tweets:
 		try:
