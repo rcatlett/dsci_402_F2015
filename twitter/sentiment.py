@@ -44,4 +44,6 @@ def sentiment_score(codes, text, normalize_all_words = True, punct = standard_pu
 		denom = swc
 	if denom == 0:
 		return 0
-	return float(sc) / float(denom)
+	
+	score = float(sc) / float(denom)
+	return score
